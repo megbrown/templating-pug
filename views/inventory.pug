@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		title inventory
+		include stylesheets.pug
+	body
+		h1 Inventory
+
+		.inventory
+			ul
+				each obj in inventory
+					li #{obj.name}, #{obj.price}
